@@ -205,7 +205,7 @@ img {
 .hero {
     padding-top: calc(var(--header-height) + var(--spacing-lg));
     padding-bottom: var(--spacing-xl);
-    background: linear-gradient(rgba(14, 124, 134, 0.8), rgba(14, 124, 134, 0.6)), url('../assets/images/hero.png');
+    background: linear-gradient(rgba(14, 124, 134, 0.8), rgba(14, 124, 134, 0.6)), url('../assets/images/home_hero.png');
     background-size: cover;
     background-position: center;
     border-bottom-left-radius: 60px;
