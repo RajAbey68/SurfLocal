@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Your Local Surf Instructors | Ahangama & Weligama | SurfLocal</title>
+    <meta name="description"
+        content="Our team of ISA certified local surf instructors. Born and raised by the ocean, we share our waves with respect, safety, and a big Sri Lankan smile.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .instructor-card {
+            display: flex;
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+
+        .instructor-img {
+            width: 40%;
+            height: 300px;
+            background-color: #ddd;
+            /* Placeholder */
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        .instructor-info {
+            padding: 2rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--color-surface);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .instructor-card {
+                flex-direction: column;
+            }
+
+            .instructor-img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SurfLocal<span style="color:var(--color-secondary)">.</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">☰</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="lessons.html">Surf Lessons</a>
+                <a href="instructors.html" class="active">Instructors</a>
+                <a href="spots.html">Surf Spots</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="bookings.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #fff;">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero"
+        style="min-height: 50vh; padding-bottom: var(--spacing-lg); background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/local_crew.png'); background-size: cover; background-position: center;">
+        <div class="container hero-content">
+            <h1>Meet the Family</h1>
+            <p>We are a team of local brothers and cousins who grew up surfing these waves. We don't just teach you to
+                stand up; we teach you to love the ocean.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+
+            <!-- Head Instructor -->
+            <div class="instructor-card">
+                <div class="instructor-img"
+                    style="background-image: url('assets/images/instructor1.jpg'); background-color: #ccc;">
+                    <!-- Placeholder color if img missing -->
+                </div>
+                <div class="instructor-info">
+                    <span class="tag">Head Instructor / Founder</span>
+                    <h3>Sameera "Sammy" Perera</h3>
+                    <p>"I started surfing on a wooden plank when I was 5. The ocean is my home."</p>
+                    <p>Sammy is ISA Level 2 certified and has over 15 years of teaching experience. He is known for his
+                        endless patience and knowing exactly when the big set is coming.</p>
+                    <p><strong>Favorite Spot:</strong> Kabalana Rock</p>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="instructor-card">
+                <div class="instructor-info" style="order: 2;"> <!-- Swap order for variety on desktop -->
+                    <span class="tag">Beginner Specialist</span>
+                    <h3>Lahiru</h3>
+                    <p>"The best surfer is the one having the most fun."</p>
+                    <p>Lahiru is the king of high-fives. He specializes in making nervous beginners feel safe and
+                        confident. His smile is contagious!</p>
+                    <p><strong>Favorite Spot:</strong> Weligama Beach Break</p>
+                </div>
+                <div class="instructor-img"
+                    style="order: 1; background-image: url('assets/images/instructor2.jpg'); background-color: #ccc;">
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
+            <div class="instructor-card">
+                <div class="instructor-img"
+                    style="background-image: url('assets/images/instructor3.jpg'); background-color: #ccc;">
+                </div>
+                <div class="instructor-info">
+                    <span class="tag">Intermediate Guide</span>
+                    <h3>Kusun</h3>
+                    <p>"Style comes from relaxation."</p>
+                    <p>If you want to learn how to turn and trim, Kusun is your guy. He is an amazing stylish
+                        longboarder who knows all the secret spots in Midigama.</p>
+                    <p><strong>Favorite Spot:</strong> Lazy Left</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Join Us CTA -->
+    <section class="section text-center" style="background-color: var(--color-surface);">
+        <div class="container">
+            <h2>Come Surf With Us!</h2>
+            <p>We promise you good vibes, safe lessons, and maybe a fresh King Coconut afterwards.</p>
+            <a href="bookings.html" class="btn btn-primary" style="margin-top: 1rem;">Book a Lesson</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 SurfLocal Sri Lanka. Smile, Surf, Repeat.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+</body>
+
+</html>

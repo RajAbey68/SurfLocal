@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Spots South Sri Lanka | Ahangama, Weligama, Mirissa Guide</title>
+    <meta name="description"
+        content="Guide to the best surf spots in South Sri Lanka. Discover Kabalana Rock, Lazy Left, Weligama Beach, and secret spots near Ahangama. Best times to surf.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .spot-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+
+        .spot-header {
+            height: 250px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .spot-title-overlay {
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            width: 100%;
+            padding: 2rem;
+            color: #fff;
+        }
+
+        .spot-content {
+            padding: 2rem;
+        }
+
+        .spot-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-tag {
+            background: rgba(14, 124, 134, 0.1);
+            color: var(--color-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SurfLocal<span style="color:var(--color-secondary)">.</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">☰</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="lessons.html">Surf Lessons</a>
+                <a href="instructors.html">Instructors</a>
+                <a href="spots.html" class="active">Surf Spots</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="bookings.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #fff;">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" style="min-height: 40vh; padding-bottom: var(--spacing-lg);">
+        <div class="container hero-content">
+            <h1>South Coast Surf Guide</h1>
+            <p>The Southern Province of Sri Lanka is a wave garden. From mellow beach breaks to hollow reefs, here are
+                our favorite spots.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Spot 1: Weligama -->
+            <article class="spot-card">
+                <div class="spot-header"
+                    style="background-image: url('assets/images/spot_weligama.jpg'); background-color:#ddd;">
+                    <div class="spot-title-overlay">
+                        <h2>Weligama Beach Break</h2>
+                    </div>
+                </div>
+                <div class="spot-content">
+                    <div class="spot-meta">
+                        <span class="meta-tag">Level: Beginner</span>
+                        <span class="meta-tag">Bottom: Sand</span>
+                        <span class="meta-tag">Best Tide: All Tides</span>
+                    </div>
+                    <p>Weligama is the capital of beginner surfing in Sri Lanka. It's a massive, sheltered bay with a
+                        soft sandy bottom. The waves are gentle, rolling, and offer long rides perfect for learning to
+                        pop up.</p>
+                    <p><strong>Our Tip:</strong> It can get crowded. We take our students to a secret sandbank on the
+                        far left of the bay to avoid the masses.</p>
+                </div>
+            </article>
+
+            <!-- Spot 2: Kabalana -->
+            <article class="spot-card">
+                <div class="spot-header"
+                    style="background-image: url('assets/images/spot_kabalana.jpg'); background-color:#ccc;">
+                    <div class="spot-title-overlay">
+                        <h2>Kabalana (The Rock)</h2>
+                    </div>
+                </div>
+                <div class="spot-content">
+                    <div class="spot-meta">
+                        <span class="meta-tag">Level: Intermediate / Advanced</span>
+                        <span class="meta-tag">Bottom: Reef/Sand</span>
+                        <span class="meta-tag">Best Tide: Mid to High</span>
+                    </div>
+                    <p>Known as "The Rock", this A-frame peak provides powerful waves for experienced surfers. However,
+                        the inside section (known as "Baby Rock") is fantastic for intermediates looking to transition
+                        from white water to green waves.</p>
+                </div>
+            </article>
+
+            <!-- Spot 3: Lazy Left -->
+            <article class="spot-card">
+                <div class="spot-header"
+                    style="background-image: url('assets/images/spot_lazyleft.jpg'); background-color:#bbb;">
+                    <div class="spot-title-overlay">
+                        <h2>Midigama Lazy Left</h2>
+                    </div>
+                </div>
+                <div class="spot-content">
+                    <div class="spot-meta">
+                        <span class="meta-tag">Level: Intermediate</span>
+                        <span class="meta-tag">Bottom: Deep Reef</span>
+                        <span class="meta-tag">Best Tide: Low Tide</span>
+                    </div>
+                    <p>A classic longboarding wave. It breaks slowly over a deep reef, making it very safe for a reef
+                        break. Perfect for refining your turns and enjoying a long, peeling left-hander.</p>
+                </div>
+            </article>
+
+            <div class="text-center">
+                <h3>Want to surf these spots?</h3>
+                <p>Our instructors surf here every day. Let us show you the lineup.</p>
+                <a href="bookings.html" class="btn btn-primary" style="margin-top: 1rem;">Book a Guide</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 SurfLocal Sri Lanka. Smile, Surf, Repeat.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+</body>
+
+</html>

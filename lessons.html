@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Lessons Sri Lanka | Beginner & Private Packages | SurfLocal</title>
+    <meta name="description"
+        content="Affordable surf lessons in South Sri Lanka. Choose from beginner group classes, private coaching, or intermediate guiding in Ahangama and Weligama.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card.popular {
+            border: 2px solid var(--color-secondary);
+            transform: scale(1.02);
+            position: relative;
+        }
+
+        .popular-tag {
+            background: var(--color-secondary);
+            color: var(--color-text);
+            padding: 0.25rem 1rem;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            margin: 1rem 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--color-text-light);
+        }
+
+        .feature-list {
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SurfLocal<span style="color:var(--color-secondary)">.</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">☰</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="lessons.html" class="active">Surf Lessons</a>
+                <a href="instructors.html">Instructors</a>
+                <a href="spots.html">Surf Spots</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="bookings.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #fff;">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" style="min-height: 40vh; padding-bottom: var(--spacing-lg);">
+        <div class="container hero-content">
+            <h1>Surf Lessons & Packages</h1>
+            <p>From your very first foamie ride to trimming down the line on a green wave. We have the right coaching
+                for you.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Beginner -->
+                <div class="pricing-card">
+                    <h3>Beginner Lesson</h3>
+                    <p>Perfect for your first time. We focus on safety, pop-up technique, and having fun in the white
+                        water.</p>
+                    <div class="price">$30 <span>/ person</span></div>
+                    <ul class="feature-list">
+                        <li>✅ 90 Minute Session</li>
+                        <li>✅ Board & Rash Guard Included</li>
+                        <li>✅ 1 Instructor per 4 Students</li>
+                        <li>✅ Beach Theory & Safety Brief</li>
+                        <li>✅ Photos Included</li>
+                    </ul>
+                    <a href="bookings.html?type=beginner" class="btn btn-secondary">Book Beginner</a>
+                </div>
+
+                <!-- Private (Popular) -->
+                <div class="pricing-card popular">
+                    <div class="popular-tag">Most Recommended</div>
+                    <h3>Private Coaching</h3>
+                    <p>1-on-1 attention to progress faster. Ideal for intermediates wanting to catch green waves.</p>
+                    <div class="price">$50 <span>/ person</span></div>
+                    <ul class="feature-list">
+                        <li>✅ 90 Minute Private Session</li>
+                        <li>✅ Video Analysis Review</li>
+                        <li>✅ Transport to Best Spot</li>
+                        <li>✅ Detailed Technique Correction</li>
+                        <li>✅ Board Rental Included</li>
+                    </ul>
+                    <a href="bookings.html?type=private" class="btn btn-primary">Book Private</a>
+                </div>
+
+                <!-- 3-Day Pack -->
+                <div class="pricing-card">
+                    <h3>3-Day Course</h3>
+                    <p>Commit to learning. By day 3, you'll be standing up confidently and understanding the ocean.</p>
+                    <div class="price">$80 <span>/ package</span></div>
+                    <ul class="feature-list">
+                        <li>✅ 3 x 90 Minute Lessons</li>
+                        <li>✅ Progressive Curriculum</li>
+                        <li>✅ Different Spots (Weligama/Ahangama)</li>
+                        <li>✅ Free Coconut after last lesson!</li>
+                        <li>✅ Certificate of Completion</li>
+                    </ul>
+                    <a href="bookings.html?type=course" class="btn btn-secondary">Book Course</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section for SEO -->
+    <section class="section" style="background-color: var(--color-surface);">
+        <div class="container">
+            <h2 class="text-center">Common Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto; margin-top: 2rem;">
+                <div style="margin-bottom: 2rem;">
+                    <h4>What should I bring?</h4>
+                    <p>Just your swimwear, sunscreen (zinc recommended!), and a towel. We provide the surfboards and
+                        rash guards.</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <h4>Do I need to be a strong swimmer?</h4>
+                    <p>You should be comfortable in the water, but for beginner lessons, we stay in waist-deep water
+                        with sandy bottoms (Weligama Beach). You are safe with us!</p>
+                </div>
+                <div>
+                    <h4>What if the waves are too big?</h4>
+                    <p>South Sri Lanka is famous for beginner-friendly waves. If it's too big at one spot, we drive to a
+                        sheltered cove like "Lazy Left" or "Fisherman's" nearby.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 SurfLocal Sri Lanka. Smile, Surf, Repeat.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf School Sri Lanka | Beginner Surf Lessons South Coast | SurfLocal</title>
+    <meta name="description" content="Authentic surf school in South Sri Lanka (Ahangama & Weligama). Learn to surf with local instructors who prioritize safety, smiles, and fun. Beginner to intermediate lessons.">
+    
+    <!-- Design System -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "SurfLocal Sri Lanka",
+      "image": "", 
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Galle Road",
+        "addressLocality": "Ahangama",
+        "addressRegion": "Southern Province",
+        "postalCode": "80650",
+        "addressCountry": "LK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 5.97,
+        "longitude": 80.43
+      },
+      "url": "https://www.surflocaldemo.com",
+      "telephone": "+94000000000",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SurfLocal<span style="color:var(--color-secondary)">.</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">☰</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="lessons.html">Surf Lessons</a>
+                <a href="instructors.html">Instructors</a>
+                <a href="spots.html">Surf Spots</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="bookings.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #fff;">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Learn to Surf with a Smile in South Sri Lanka</h1>
+            <p>More than just a lesson. Experience the ocean with respect, safety, and local kindness. Best for beginners & families in Ahangama and Weligama.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="lessons.html" class="btn btn-primary">View Packages</a>
+                <a href="values.html" class="btn btn-secondary">Our Ethos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Values / Ethos Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+                <h2>Authentic Sri Lankan Vibes</h2>
+                <p>We believe surfing is for everyone. No ego, just fun.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👐</div>
+                    <h3>Warm & Welcome</h3>
+                    <p>We treat every guest like family. Experience true Sri Lankan hospitality in the water.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>ISA certified local instructors who know every current, reef, and sandbank on the South Coast.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Uncrowded Spots</h3>
+                    <p>We take you to the best beginner waves in Ahangama and Weligama, away from the chaos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why South Sri Lanka? -->
+    <section class="section" style="background-color: var(--color-surface);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                <div>
+                    <h2>Surfing in South Sri Lanka</h2>
+                    <p>From the gentle sandy beach breaks of Weligama to the long friendly peels of Ahangama, the South Coast is a paradise for learning to surf.</p>
+                    <ul style="margin-top: 1rem; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">✅ Warm tropical water (no wetsuits!)</li>
+                        <li style="margin-bottom: 0.5rem;">✅ Consistent waves year-round</li>
+                        <li style="margin-bottom: 0.5rem;">✅ Perfect for beginners and intermediates</li>
+                    </ul>
+                    <a href="spots.html" class="btn btn-primary">Explore Surf Spots</a>
+                </div>
+                <div style="background: #ddd; height: 300px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+                    <!-- Placeholder for image -->
+                    <p style="color: #666;">(Image: Beautiful Ahangama Sunrise Lineup)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+    </script>
+</body>
+</html>

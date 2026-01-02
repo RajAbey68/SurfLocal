@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Surf Lesson | Contact Us | SurfLocal Sri Lanka</title>
+    <meta name="description"
+        content="Book your surf lesson in South Sri Lanka. Fast response via WhatsApp or Form. Ask us about seasonal offers and accommodation packages.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .form-container {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(14, 124, 134, 0.1);
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .contact-info-box {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        @media (max-width: 768px) {
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SurfLocal<span style="color:var(--color-secondary)">.</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">☰</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="lessons.html">Surf Lessons</a>
+                <a href="instructors.html">Instructors</a>
+                <a href="spots.html">Surf Spots</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="bookings.html" class="active btn btn-primary" style="padding: 0.5rem 1.5rem; color: #fff;">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" style="min-height: 40vh; padding-bottom: var(--spacing-lg);">
+        <div class="container hero-content">
+            <h1>Get in Touch</h1>
+            <p>Ready to catch waves? Fill out the form below or send us a WhatsApp message. We usually reply within 1
+                hour!</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-methods">
+
+                <!-- Booking Form -->
+                <div class="form-container">
+                    <h3 style="margin-bottom: 1.5rem;">Booking Enquiry</h3>
+                    <form action="#"
+                        onsubmit="alert('Thank you! We have received your message and will reply shortly via Email or WhatsApp.'); return false;">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="Surfer Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="hello@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp Number (Recommended)</label>
+                            <input type="tel" id="whatsapp" placeholder="+1 234 567 890">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Interested In</label>
+                            <select id="type">
+                                <option value="beginner">Beginner Lesson</option>
+                                <option value="private">Private Coaching</option>
+                                <option value="course">3-Day Course</option>
+                                <option value="guide">Surf Guiding (Intermediate)</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message / Questions</label>
+                            <textarea id="message" rows="4"
+                                placeholder="Tell us about your surf experience, preferred dates, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+                    </form>
+                </div>
+
+                <!-- Info & Map -->
+                <div>
+                    <div class="contact-info-box" style="margin-bottom: 2rem;">
+                        <h3>Quick Contact</h3>
+                        <p style="margin-top: 1rem;"><strong>📍 Location:</strong><br>Galle Road, Ahangama 80650, Sri
+                            Lanka</p>
+                        <p><strong>📞 WhatsApp:</strong><br><a href="#"
+                                style="color:var(--color-primary); font-weight:600;">+94 77 123 4567</a></p>
+                        <p><strong>📧 Email:</strong><br>hello@surflocal-demo.com</p>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <h3>Opening Hours</h3>
+                        <ul style="margin-top: 1rem;">
+                            <li style="display:flex; justify-content:space-between; margin-bottom:0.5rem;"><span>Mon -
+                                    Sun:</span> <span>6:00 AM - 6:00 PM</span></li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">We surf early! Best time to book a
+                            lesson is 7:00 AM or 4:00 PM.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 SurfLocal Sri Lanka. Smile, Surf, Repeat.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+        // Simple URL param handler to pre-select dropdown
+        const urlParams = new URLSearchParams(window.location.search);
+        const type = urlParams.get('type');
+        if (type) {
+            const select = document.getElementById('type');
+            if (select) select.value = type;
+        }
+    </script>
+</body>
+
+</html>

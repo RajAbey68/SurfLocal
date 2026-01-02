@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Surfing Moments in Sri Lanka | SurfLocal</title>
+    <meta name="description"
+        content="See the smiles, the waves, and the good vibes. Our gallery of surf lessons and beautiful sunsets in Ahangama and Weligama.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            aspect-ratio: 1;
+            background-color: #ddd;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item:nth-child(2n) {
+            aspect-ratio: 4/5;
+            /* Varied Aspect Ratios for masonry feel */
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SurfLocal<span style="color:var(--color-secondary)">.</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">☰</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="lessons.html">Surf Lessons</a>
+                <a href="instructors.html">Instructors</a>
+                <a href="spots.html">Surf Spots</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="bookings.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #fff;">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" style="min-height: 40vh; padding-bottom: var(--spacing-lg);">
+        <div class="container hero-content">
+            <h1>Good Times & Tan Lines</h1>
+            <p>A collection of moments from our surf family. Smiles guaranteed.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- User Uploaded Photos -->
+                <div class="gallery-item" style="grid-column: span 2; aspect-ratio: 16/9;">
+                    <img src="assets/images/local_crew.png" alt="Our local surf instructor team smiling">
+                </div>
+                <div class="gallery-item"><img src="assets/images/surfer_walking.jpg"
+                        alt="Surfer walking into the ocean"></div>
+                <div class="gallery-item"><img src="assets/images/surfer_2.jpg" alt="Surfer riding a wave"></div>
+                <div class="gallery-item"><img src="assets/images/surfer_3.jpg" alt="Stylish longboarding"></div>
+                <div class="gallery-item"><img src="assets/images/surfer_1.jpg" alt="Catching a wave in Ahangama"></div>
+
+                <!-- Lifestyle & Activities -->
+                <div class="gallery-item"><img src="assets/images/lifestyle_boat.jpg" alt="Lagoon boat safari trip">
+                </div>
+                <div class="gallery-item" style="grid-column: span 2; aspect-ratio: 16/9;"><img
+                        src="assets/images/lifestyle_turtles.jpg" alt="Visiting the local sea turtle hatchery"></div>
+                <div class="gallery-item"><img src="assets/images/lifestyle_dinner.jpg" alt="Family dinner nights">
+                </div>
+                <div class="gallery-item"><img src="assets/images/lifestyle_dancing.jpg" alt="Good vibes and dancing">
+                </div>
+                <div class="gallery-item"><img src="assets/images/lifestyle_party_cam.jpg" alt="Capturing the memories">
+                </div>
+
+                <!-- Keeping some placeholders for layout balance if needed, or removing them for a cleaner look. Let's keep a couple of colors for 'mood' -->
+                <div class="gallery-item" style="background: #e0f2f1;"></div>
+                <div class="gallery-item" style="background: #ffe0b2;"></div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <p>Follow us on Instagram <a href="#"
+                        style="color:var(--color-primary); font-weight:700;">@SurfLocalSL</a> for daily reports!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 SurfLocal Sri Lanka. Smile, Surf, Repeat.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+</body>
+
+</html>
