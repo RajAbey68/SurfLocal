@@ -45,6 +45,60 @@
             /* Varied Aspect Ratios for masonry feel */
             grid-row: span 2;
         }
+
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 4px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: zoom 0.3s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
     <link rel="stylesheet" href="css/whatsapp.css">
 </head>
@@ -128,6 +182,12 @@
         </div>
     </section>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
     <footer>
         <div class="container text-center">
             <p>&copy; 2024 SurfLocal Sri Lanka. Smile, Surf, Repeat.</p>
@@ -138,6 +198,31 @@
         const mobileToggle = document.getElementById('mobile-toggle');
         const navLinks = document.getElementById('nav-links');
         mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+        // Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const span = document.getElementsByClassName("close")[0];
+        const images = document.querySelectorAll('.gallery-item img');
+
+        images.forEach(img => {
+            img.addEventListener('click', function () {
+                lightbox.style.display = "flex";
+                lightboxImg.src = this.src;
+            });
+        });
+
+        // Close on X click
+        span.onclick = function () {
+            lightbox.style.display = "none";
+        }
+
+        // Close on background click
+        lightbox.onclick = function (event) {
+            if (event.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+        }
     </script>
     <!-- WhatsApp Button -->
     <a href="https://wa.me/94765284522" class="whatsapp-float" target="_blank">
