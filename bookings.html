@@ -99,41 +99,52 @@
     <section class="section">
         <div class="container">
             <div class="contact-methods">
+                <div class="contact-info">
+                    <h3>Quick Contact</h3>
+                    <p><strong>Manager:</strong> Viraj J</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/94765284522">+94 76 528 4522</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:hello@surflocal.lk">hello@surflocal.lk</a></p>
+                    <p><strong>Location:</strong> Ahangama & Weligama, Sri Lanka</p>
 
-                <!-- Booking Form -->
-                <div class="form-container">
-                    <h3 style="margin-bottom: 1.5rem;">Booking Enquiry</h3>
-                    <form action="#"
-                        onsubmit="alert('Thank you! We have received your message and will reply shortly via Email or WhatsApp.'); return false;">
+                    <div style="margin-top: 2rem;">
+                        <h4>Visiting Us?</h4>
+                        <p>We are surfing most mornings from 6am - 10am. The best time to drop by the villa is in the
+                            afternoon.</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <!-- This form sends emails AND saves to a database via Formspree (Free CRM) -->
+                    <!-- USER ACTION: Sign up at formspree.io and paste your unique URL below -->
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" required placeholder="Surfer Name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" required placeholder="hello@example.com">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
                         </div>
                         <div class="form-group">
-                            <label for="whatsapp">WhatsApp Number (Recommended)</label>
-                            <input type="tel" id="whatsapp" placeholder="+1 234 567 890">
-                        </div>
-                        <div class="form-group">
-                            <label for="type">Interested In</label>
-                            <select id="type">
-                                <option value="beginner">Beginner Lesson</option>
-                                <option value="private">Private Coaching</option>
-                                <option value="course">3-Day Course</option>
-                                <option value="guide">Surf Guiding (Intermediate)</option>
-                                <option value="other">Other Inquiry</option>
+                            <label for="type">Inquiry Type</label>
+                            <select id="type" name="type">
+                                <option value="lesson">Surf Lesson</option>
+                                <option value="package">Surf & Stay Package</option>
+                                <option value="guiding">Surf Guiding</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message / Questions</label>
-                            <textarea id="message" rows="4"
-                                placeholder="Tell us about your surf experience, preferred dates, etc."></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us your customized dates or questions..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
+                    <p style="font-size: 0.8rem; color: #888; margin-top: 1rem; text-align: center;">
+                        *We usually reply within 24 hours via WhatsApp or Email.
+                    </p>
                 </div>
 
                 <!-- Info & Map -->
